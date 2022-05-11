@@ -7,12 +7,31 @@
     <title>Cart</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+<script>
+function redirpayment() {
+  location.replace("payment.html")
+}
+</script>
 <body>
 <form action="action">
 <h1>Cart</h1>
 <p>
-<img src="fsh.jpg" height="100px" width="200px"/>
-<p>Fish & Chips</p><p><>
+<img src="fsh.jpg" height="100px" width="200px"/><div class="a">
+<style>
+div.a{
+	text-align: justify;
+}
+div.b{
+	text-align: right;
+}
+</style>
+Fish & Chips
+</div>
+<div class="b">R69.99</div>
+
+</p>
+<p id="jacob">
+<center><button class="btn" type="button" onclick="redirpayment()">Checkout</button><center>
 </p>
 </form>
 </body>

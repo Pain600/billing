@@ -13,23 +13,14 @@
 		<div>
         <label for="pemail">Enter Email</label><br>
         <input class="box" type="text" name="Pemail" id="Pemail" placeholder="Enter Email" required>
-		<script>
-		function emptyEmail(){
-		varChar pemail = pemail;
 		
-		if(pemail == "") {
-		alert("Email must be filled out")
-		return false;
-			}
-		}
-		</script>
 		<br>
 		</div>
         <label for="cnum">Card Number</label><br>
-        <input class="box" type="number" name="cardNumber" id="cardNumber" placeholder="1234 1234 1234 1234" required><br>
+        <input class="box" type="number" name="cardNumber" id="cardNumber" placeholder="1234 1234 1234 1234" required="required"><br>
         
 		<label for="name">Pin</label><br>
-        <input class="box" type="number" name="Pin" id="Pin" placeholder="Enter Pin" required><br>
+        <input class="box" id="txtabc" type="number" name="Pin" placeholder="Enter Pin" maxlength="5" minlength="4" pattern ="[0-9]" required= "required"><br>
         <button class="btn"  type="button" class-inline="true">Pay now</button>
         <button class="btn" type="button" class-inline="true">cancel</button> 
     </form>

@@ -13,7 +13,19 @@ form{
 }
 h1{
     text-align: center;
+	color: #fff;
 }
+h2{
+    text-align: center;
+	color: #fff;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 27%;
+}
+
 .box{
     width: 100%;
     padding: 10px;
@@ -42,6 +54,19 @@ h1{
     background-color: #30475e;
     font-size: 18px;
     color: #fff;
+
+}
+.cartbtn{
+	width: 49%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #30475e;
+    font-size: 18px;
+    color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 @media screen and (max-width: 600px){
     body{
@@ -59,3 +84,6 @@ h1{
         box-sizing: border-box;
     }
 }
+© 2022 GitHub, Inc.
+Terms
+Priv

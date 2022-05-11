@@ -7,6 +7,11 @@
     <title>Payment-page</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+<script>
+function redircart() {
+  location.replace("Cart.html")
+}
+</script>
 <body>
     <form action="success.html">
         <h1>Payment</h1>
@@ -15,11 +20,13 @@
         <input class="box" type="text" name="Pemail" id="Pemail" placeholder="Enter Email" required><br>
 		</div>
         <label for="cnum">Card Number</label><br>
-        <input class="box" type="int" name="cardNumber" id="cardNumber" placeholder="1234 1234 1234 1234" maxlength="16" minlength="16" pattern="[0-9] {16}"><br>
+        <input class="box" type="number" name="cardNumber" id="cardNumber" placeholder="1234 1234 1234 1234" required="required"><br>
+        
 		<label for="name">Pin</label><br>
-        <input class="box" type="int" name="Pin" id="Pin" placeholder="Enter Pin" maxlength = "5" minlength="4" pattern="[0-9] {5}" required="required" ><br>
-        <button class="btn"  type="button" class-inline="true" >Pay now</button>
-        <button class="btn" type="button" class-inline="true">cancel</button> 
+        <input class="box" id="txtabc" type="number" name="Pin" placeholder="Enter Pin" maxlength="5" minlength="4" pattern ="[0-9]" required= "required"><br>
+        <button class="btn"  type="button" class-inline="true">Pay now</button>
+        <button class="btn" type="button" class-inline="true" onclick="redircart()">cancel</button> 
+
     </form>
 </body>
 </html>

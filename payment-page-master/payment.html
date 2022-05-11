@@ -14,24 +14,28 @@ function redircart() {
 </script>
 <script>
 function forwardsuccess() {
-  location.replace("success.html")
+if(lemail && cNum && pass !="" ){
+  location.replace("success.html")}
+  else{
+  location.replace("unsuccessful.html")
+  }
 }
 </script>
 
 
+
 <body>
-    <form action="success.html">
+    <form >
         <h1>Payment</h1>
 		<div>
-        <label for="pemail">Enter Email</label><br>
-        <input class="box" type="text" name="Pemail" id="Pemail" placeholder="Enter Email" required><br>
+        <label >Enter Email</label><br>
+        <input class="box" type="email" name="Pemail" id="lemail" placeholder="Enter Email" required /><br>
 		</div>
-        <label for="cnum">Card Number</label><br>
-        <input class="box" type="int" name="cardNumber" id="cardNumber" placeholder="1234 1234 1234 1234" maxlength="16" minlength="16" pattern = "[0-9]{16}" required="required"><br>
-        
-		<label for="name">Pin</label><br>
-        <input class="box" id="txtabc" type="int" name="Pin" placeholder="Enter Pin" maxlength="5" minlength="4" pattern ="[0-9]{5}" required= "required"><br>
-        <button class="btn"  type="button" class-inline="true" onclick="forwardsuccess()">Pay now</button>
+        <label >Card Number</label><br>
+        <input class="box" type="int" name="cardNumber" id="cNum" placeholder="1234 1234 1234 1234" maxlength="16" minlength="16" pattern = "[0-9]{16}" required /><br>
+		<label >Pin</label><br>
+        <input class="box" id="pass" type="int" name="Pin" placeholder="Enter Pin" maxlength="5" minlength="4" pattern ="[0-9]{5}" required/><br>
+        <button class="btn"  type="button" class-inline="true" >Pay now</button>
         <button class="btn" type="button" class-inline="true" onclick="redircart()">cancel</button> 
 
     </form>

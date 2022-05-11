@@ -7,6 +7,11 @@
     <title>Payment-page</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+<script>
+function redircart() {
+  location.replace("Cart.html")
+}
+</script>
 <body>
     <form action="action">
         <h1>Payment</h1>
@@ -22,7 +27,7 @@
 		<label for="name">Pin</label><br>
         <input class="box" id="txtabc" type="number" name="Pin" placeholder="Enter Pin" maxlength="5" minlength="4" pattern ="[0-9]" required= "required"><br>
         <button class="btn"  type="button" class-inline="true">Pay now</button>
-        <button class="btn" type="button" class-inline="true">cancel</button> 
+        <button class="btn" type="button" class-inline="true" onclick="redircart()">cancel</button> 
     </form>
 </body>
 </html>

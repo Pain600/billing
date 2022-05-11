@@ -13,11 +13,14 @@ form{
 }
 h1{
     text-align: center;
-	color: #fff;
 }
-h2{
+.head h1{
     text-align: center;
 	color: #fff;
+}
+.head h2{
+    text-align: center;
+	color: #fff;	
 }
 .center {
   display: block;

@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:  #222831;
+    background-color: #222831;
     font-family: 'Montserrat', sans-serif;
 }
 form{
@@ -17,6 +17,7 @@ h1{
 div.a{
 	text-align: left;
 }
+
 .box{
     width: 100%;
     padding: 10px;

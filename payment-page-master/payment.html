@@ -13,13 +13,11 @@ function redircart() {
 }
 </script>
 <body>
-    <form action="action">
+    <form action="success.html">
         <h1>Payment</h1>
 		<div>
         <label for="pemail">Enter Email</label><br>
-        <input class="box" type="text" name="Pemail" id="Pemail" placeholder="Enter Email" required>
-		
-		<br>
+        <input class="box" type="text" name="Pemail" id="Pemail" placeholder="Enter Email" required><br>
 		</div>
         <label for="cnum">Card Number</label><br>
         <input class="box" type="number" name="cardNumber" id="cardNumber" placeholder="1234 1234 1234 1234" required="required"><br>
@@ -28,6 +26,7 @@ function redircart() {
         <input class="box" id="txtabc" type="number" name="Pin" placeholder="Enter Pin" maxlength="5" minlength="4" pattern ="[0-9]" required= "required"><br>
         <button class="btn"  type="button" class-inline="true">Pay now</button>
         <button class="btn" type="button" class-inline="true" onclick="redircart()">cancel</button> 
+
     </form>
 </body>
 </html>

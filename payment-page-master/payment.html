@@ -14,7 +14,26 @@ function redircart() {
 </script>
 <script>
 function forwardsuccess() {
-  location.replace("success.html")
+var crdnum = document.getElementById("cardNumber").value;
+var email = document.getElementById("Pemail").value;
+var pin = document.getElementById("txtabc").value;
+var validRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+if(email.match(validRegex) == false || email == ""){
+alert("Email is Invalid!")
+}
+else if(crdnum == "" || crdnum.length < 16){
+alert("Card Number is Invalid!")
+}
+else if(pin == "" || pin.length < 4){
+alert("Pin is Invalid!")
+}
+else if( confirm("Are you sure you want to proceed?\nEither OK or Cancel") == true ){
+    location.replace("success.html")
+    }
+ else{
+ alert("You have cancelled!")
+ }
 }
 </script>
 

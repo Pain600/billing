@@ -9,6 +9,14 @@ h1 {
     text-align: center;
 }
 
+.bill-amount{
+	margin-right:15px;
+	margin-top:30px;
+	width:125px;
+	color: white;
+	font-size: 18px;
+}
+
 #container {
     height: 325px;
     width: 350px;

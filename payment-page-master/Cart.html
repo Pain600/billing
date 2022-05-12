@@ -7,17 +7,25 @@
     <title>Cart</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<script>
+<!--script>
 function redirpayment() {
   location.replace("payment.html")
 }
-</script>
+</script-->
 <body>
 <form action="action">
+<center>
 <h1>Cart</h1>
 <p>
 <img src="fsh.jpg" height="100px" width="200px"/><div class="a">
+<div class="con">
+Fish & Chips     R69.99<br>
+*Without VAT*
+</div>
 <style>
+div.con{
+text-align: center;
+}
 div.a{
 	text-align: justify;
 }
@@ -25,25 +33,19 @@ div.b{
 	text-align: right;
 }
 </style>
-Fish & Chips
 </div>
-<!--div class="b">
-    SubTotal : R69.99<br>
-    VAT incl : R9,80<br>
-    ____________________<br>
-    Total : R79.80
 
-</div-->
 <div id="conTainer">
+<center>
 	<br>
 	<p>
-       Bill Amount: <input id="bill-amount" type="number">
+       Bill Amount: <input id="bill-amount" type="decimal"><br>
        VAT Percentage: <input id="vat-percentage" type="number">
 	   <br>
-	   Total Bill: <input id="total-bill" type="number">
-        <button class="button" id="btn" >Calculate</button>
+	   Total Bill: <input id="total-bill" type="number"><br>
+        <button class="buttn" id="btn" >Calculate</button>
 		<style>
-		.button
+		.buttn
 		{
 		background-color: grey;
 		color : black;
@@ -53,9 +55,12 @@ Fish & Chips
     </div>
     <script src="main.js"></script>
 </p>
+</center>
 <p id="jacob">
 <center><button class="btn" type="button" onclick="redirpayment()">Checkout</button><center>
 </p>
+</center>
 </form>
+
 </body>
 </html>
